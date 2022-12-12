@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      .post {
+        color: green;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+      .post-link {
+        color: red;
+      }
+      .post .post-link {
+        /* color: blue; */
+        color: inherit;
+        border: 1px solid black;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="post">
+      <h1 id="title" class="post-title">Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt soluta
+        error labore odio eum quae velit ipsa reiciendis quasi dolorum?
+      </p>
+      <a class="post-link">Link do artykułu</a>
+    </article>
+  </body>
+</html>

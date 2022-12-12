@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <style>
+      p {
+        color: blue;
+      }
+      a {
+        text-decoration: none;
+      }
+      .green-font {
+        color: green;
+      }
+      .blue-bg {
+        background-color: blue;
+      }
+
+      .alert {
+        border: 2px solid black;
+        color: black;
+        padding: 5px;
+      }
+      .success {
+        background-color: green;
+      }
+      .warning {
+        background-color: yellow;
+      }
+      .error {
+        background-color: red;
+      }
+
+      #title {
+        color: pink;
+        background-color: teal;
+      }
+
+      ul a {
+        color: green;
+      }
+
+      .menu > li {
+        border: 1px solid green;
+      }
+
+      a[title] {
+        color: red;
+      }
+      a[title="Przewodnik po css"] {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello</p>
+    <a href="http://google.com">test</a>
+
+    <p class="green-font">I am green</p>
+    <div class="green-font">I am also green but a div</div>
+
+    <div class="green-font blue-bg">I am green and blue</div>
+
+    <p class="alert success">Sukces</p>
+    <p class="alert warning">Ostrzeżenie</p>
+    <p class="alert error">Błąd</p>
+
+    <h1 id="title">Nagłówek strony</h1>
+    <!-- <h1 id="title">Nagłówek strony</h1> -->
+
+    <ul>
+      <li>
+        <a href="">Twitter</a>
+      </li>
+      <li>
+        <a href="">Instagram</a>
+      </li>
+      <li>
+        <a href="">Facebook</a>
+      </li>
+    </ul>
+
+    <ul class="menu">
+      <li>
+        Komputery i akcesoria
+        <ul class="submenu">
+          <li>Procesory</li>
+          <li>Monitory</li>
+          <li>Karty graficzne</li>
+        </ul>
+      </li>
+      <li>
+        Komputery i akcesoria
+        <ul class="submenu">
+          <li>Procesory</li>
+          <li>Monitory</li>
+          <li>Karty graficzne</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>
+      <a href="" title="Przewodnik po tagach">htmlreference.io</a>
+    </p>
+    <p>
+      <a href="" title="Przewodnik po css">cssreference.io</a>
+    </p>
+    <p>
+      <a href="">youtube.com</a>
+    </p>
+  </body>
+</html>

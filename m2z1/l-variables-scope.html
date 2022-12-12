@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      .alert {
+        --alert-text-color: green;
+        --alert-accent-color: tomato;
+      }
+
+      .alert-text {
+        color: var(--alert-text-color);
+        border: 5px solid var(--alert-accent-color);
+      }
+
+      .alert-icon {
+        background-color: var(--alert-accent-color);
+      }
+
+      .try {
+        /* --alert-accent-color: orange; */
+        background-color: var(--alert-accent-color, pink);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert">
+      <p class="alert-text">Lorem ipsum dolor sit amet.</p>
+      <p class="alert-icon">X</p>
+    </div>
+
+    <p class="try">test</p>
+  </body>
+</html>
