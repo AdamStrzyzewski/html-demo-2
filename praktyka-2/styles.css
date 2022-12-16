@@ -1,0 +1,268 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --white-color: #ffffff;
+  --orange-accent-color: #ff6c00;
+  --gray-color-1: #303030;
+  --gray-color-2: #555555;
+  --gray-color-3: #9da4bd99;
+  --gray-color-4: #9da4bd;
+
+  --bg-color-dark-blue: #191c26;
+  --bg-color-light-gray: #f7f7f7;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+.secondary-font {
+  font-family: var(--secondary-font);
+}
+
+.orange-accent {
+  color: var(--orange-accent-color);
+}
+
+.navigation-links {
+  background-color: var(--gray-color-3);
+}
+.navigation-links .link {
+  font-weight: 600;
+  color: var(--white-color);
+  font-size: 12px;
+}
+
+.navigation-links .link:focus,
+.navigation-links .link:hover {
+  color: var(--orange-accent-color);
+}
+
+.tel-link {
+  background-color: var(--gray-color-4);
+  font-size: 12px;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 25px;
+  background-color: transparent;
+  outline: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-color-1);
+  cursor: pointer;
+  border: 1px solid var(--orange-accent-color);
+  text-transform: uppercase;
+}
+.button-white-text {
+  color: var(--white-color);
+}
+
+.social-link {
+  font-weight: 600;
+  color: var(--gray-color-1);
+  font-size: 11px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--orange-accent-color);
+}
+
+.semi-transparent-gray-text {
+  color: var(--gray-color-3);
+}
+
+.secondary-header {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: calc(15 / 11);
+  color: var(--gray-color-1);
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--gray-color-1);
+}
+
+.undertitle {
+  color: var(--gray-color-2);
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+
+.main-section {
+  background-color: grey;
+}
+.main-section .main-title {
+  color: var(--white-color);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+}
+
+.main-section .flavour-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  /* 0.02 * 18px */
+  letter-spacing: 0.02em;
+}
+
+.slider-controls {
+  list-style: none;
+  display: flex;
+}
+
+.slider-controls .slider-button {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.slider-controls .back-button {
+  color: var(--gray-color-4);
+}
+.slider-controls .forward-button {
+  color: var(--white-color);
+}
+
+.row {
+  display: flex;
+}
+
+.about-section .description {
+  color: var(--gray-color-2);
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.prices-section .secondary-header {
+  color: var(--gray-color-4);
+}
+
+.prices-section {
+  background-color: var(--bg-color-dark-blue);
+}
+
+.prices-section .secondary-header {
+  color: var(--gray-color-4);
+}
+
+.prices-section .title {
+  color: var(--white-color);
+}
+
+.prices-section .services-list {
+  color: var(--gray-color-3);
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+
+.prices-section .services-lists-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.why-us-section .tiles-list .tile-number {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.why-us-section .tiles-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.why-us-section .tiles-list li {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  background-color: var(--bg-color-light-gray);
+}
+
+.why-us-section .tiles-list .tile-number .orange-accent {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: calc(22 / 16);
+}
+.why-us-section .tiles-list .tile-undertile {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: calc(15 / 11);
+  text-align: center;
+  color: var(--gray-color-1);
+}
+
+.section-contact {
+  background-color: var(--bg-color-dark-blue);
+}
+.section-contact .title {
+  color: var(--white-color);
+}
+
+.section-contact .address-box {
+  font-style: normal;
+}
+.section-contact .address-box li a {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--gray-color-4);
+}
+
+.section-contact .working-hours {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.section-contact .undertitle {
+  color: var(--gray-color-3);
+}
+
+.footer {
+  background-color: var(--bg-color-light-gray);
+  margin: 0;
+}
+.footer .copyright {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--gray-color-3);
+}
